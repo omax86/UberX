@@ -8,11 +8,51 @@
         &_header
             font-size: 50px
     .reasons
+        .container
+            min-width: 992px
+            margin: 0
+            padding: 0
         .card_wrapper
             align-items: flex-start
         .card_text
-            width: 300px
+            margin: 0 0 0 16px
+            width: 325px
+    .mobile_item
+        width: 300px
+    footer
+        .bottom_container
+            .horizontal_wrapper
+                .left_wrapper
+                    width: 25%
+                    .social_network_wrapper
+                        .social_network_box
+                            width: 25px
+                            height: 25px
+                            a
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                img
+                                    width: 75%
+                                    height: 75%
+                .middle_wrapper
+                    .regular_links_wrapper
+                        .first_row_link
+                            font-size: 12px
+                            margin: 0 12px
+                        .second_row_link
+                            font-size: 10px
+                .right_wrapper
+                    width: 25%
+                    .app_stores_wrapper
+                        .app_store_link
+                            img
+                                width: 70px
+                                height: 20px
+
 @media (max-width: 991px)
+    .title
+        font-size: 34px
     .menu
         &_item
             padding-right: 8px
@@ -37,18 +77,120 @@
             font-size: 29px
     .reasons
         .container
-            margin: auto
-            padding: auto
-            max-width: auto
+            min-width: 768px
+            margin: 0
+            padding: 0
             .reasons_wrapper
-            min-height: 2222px
-            .card_wrapper
-                flex-direction: column
-                align-items: center
-            .card_text
-                margin: 0
-                margin-top: 20px
-                width: 300px
+                max-width: 768px
+                .card_wrapper
+                    flex-direction: column
+                    justify-content: flex-start
+                    min-height: 280px
+                    margin-top: 20px
+                .card_text
+                    margin-top: 10px
+    .mobile_item
+        width: 224px
+        height: 196px
+        padding-top: 35px
+        margin-bottom: 10px
+        &_subtitle
+            font-size: 21px
+    .around_the_world
+        padding: 25px 0
+        background: url('../img/world_map.png') none
+        background: url('../img/world_map_shrinked.png') no-repeat
+        background-size: 100%
+        min-height: auto
+        .cities_link
+            margin-top: 145px
+            margin-bottom: 30px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px
+        &_link
+            font-size: 20px
+            text-decoration: none
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            color: #ffffff
+            font-size: 16x
+            font-weight: 400
+            text-transform: uppercase
+            text-decoration: none
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+    .reasons
+        .container
+            min-width: 575px
+            .title
+                padding: 0 35px
+    .choice
+        .car_in_eclipse
+                width: 500px
+            
+
+
+
+
+
+
+            
+        
 
         
 

@@ -8,12 +8,13 @@ nav
   position: fixed
   z-index: 1
   /* Set the navbar to fixed position
-
   top: 0
   /* Position the navbar at the top of the page
-
   width: 100%
   /* Full width
+
+.hamburger
+  display: none
 
 .menu
   display: flex
@@ -82,6 +83,9 @@ nav
     background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
     text-transform: uppercase
     +btn_hover
+
+
+
 
 .promo
   min-height: 800px
@@ -302,8 +306,6 @@ nav
 
   .car_in_eclipse
     position: absolute
-    height: 480px
-    width: 759px
     top: 232px
     left: 50%
     transform: translate(-50%)
@@ -373,13 +375,16 @@ nav
 
 footer  
   .bottom_container
+    width: 98%
+    margin: 0 auto
     .horizontal_wrapper
       display: flex
       justify-content: space-between
       .links_wrapper
         width: 33% 
       .left_wrapper
-        transform: translateX(-75%)
+        display: flex
+        align-items: center
         .social_network_wrapper
           display: flex
           justify-content: space-around
@@ -413,12 +418,11 @@ footer
             text-align: left
             text-transform: uppercase
             text-decoration: none
-            margin: 0 9px
+            margin: 0 7px
             width: 435px
       .right_wrapper
         display: flex
         justify-content: flex-end
-        transform: translateX(75%)
         .app_stores_wrapper
           display: flex
           justify-content: space-around
@@ -426,7 +430,7 @@ footer
           width: 300px
   .link_russian   
     display: block
-    margin-top: 19px 
+    margin-top: 71px 
     color: #1fbad6
     font-size: 11px
     font-weight: 400
@@ -437,6 +441,8 @@ footer
       margin-top: 31px
       height: 8px
       background-color: #070716
+.xs-visible
+  display: none
 
 
 
