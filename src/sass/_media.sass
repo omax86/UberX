@@ -34,7 +34,7 @@
                                 align-items: center
                                 img
                                     width: 75%
-                                    height: 75%
+                                    height: auto
                 .middle_wrapper
                     .regular_links_wrapper
                         .first_row_link
@@ -48,7 +48,7 @@
                         .app_store_link
                             img
                                 width: 70px
-                                height: 20px
+                                height: auto
 
 @media (max-width: 991px)
     .title
@@ -78,7 +78,7 @@
     .reasons
         .container
             min-width: 768px
-            margin: 0
+            margin: 0 auto
             padding: 0
             .reasons_wrapper
                 max-width: 768px
@@ -98,6 +98,7 @@
             font-size: 21px
     .around_the_world
         padding: 25px 0
+        background-color: #080816
         background: url('../img/world_map.png') none
         background: url('../img/world_map_shrinked.png') no-repeat
         background-size: 100%
@@ -127,6 +128,8 @@
         &_link
             font-size: 20px
             text-decoration: none
+    .title
+        font-size: 30px
     .hamburger
         display: block
         position: absolute
@@ -155,11 +158,12 @@
         display: none
     .xs-visible
         display: block
+    .title
+        
     .subheader
         &_phone
             display: block
             margin-top: 10px
-            color: #ffffff
             font-size: 16x
             font-weight: 400
             text-transform: uppercase
@@ -175,14 +179,299 @@
         &_header
             line-height: 45px
     .reasons
+        margin: 35px 0 0 0
         .container
+            max-width: 767px
             min-width: 575px
+            margin: 0 auto
             .title
+                margin-top: 20px
                 padding: 0 35px
+            .subtitle
+                margin-top: 19px
     .choice
+        min-height: auto
+        .black_bg
+            padding: 35px
+        .blue_bg
+            padding: 77px 0 18px 0
+            min-height: 200px
         .car_in_eclipse
-                width: 500px
+            display: block
+            width: 100%
+            max-width: 540px
+            height: auto
+        .around_the_world
+            padding: 15px 0
+            .title
+                margin-top: 22px
+            .subtitle
+                margin-top: 10px
+            .cities_link
+                margin-top: 115px
+                margin-bottom: 0
+                font-size: 14px
+    footer
+        .bottom_container
+            .horizontal_wrapper
+                position: relative
+                .left_wrapper
+                    position: absolute
+                    top: 77px
+                    left: 50%
+                    transform: translate(-50%)
+                    .social_network_wrapper
+                        .social_network_box
+                            width: 20px
+                            height: 20px
+                            a
+                                img
+                                    width: 65%
+                                    height: auto
+                .middle_wrapper
+                    width: 60%
+                    margin: 0 auto
+                    .regular_links_wrapper
+                        .first_row_links_wrapper
+                            .first_row_link
+                                font-size: 10px
+                                margin: 0 14px
+                        .second_row_links_wrapper
+                            display: flex
+                            flex-wrap: wrap
+                            justify-content: space-between
+                            margin: 0 auto
+                            max-width: 220px
+                            .second_row_link
+                                width: auto
+                                font-size: 10px
+                .right_wrapper
+                    width: 33%
+                    position: absolute
+                    top: 105px
+                    left: 50%
+                    transform: translate(-50%)
+                    .app_stores_wrapper
+                        .app_store_link
+                            img
+                                width: 55px
+                                height: auto
+        .link_russian
+            font-size: 10px
+            margin-top: 15px
+        .bottom_bar
+            margin-top: 70px
+            background-color: #ffff
+    .divider
+        margin-bottom: 12px
+@media (max-width: 575px)
+    nav
+        height: 30px
+    .subheader
+        height: 60px
+        top: -20px
+        
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff)
+    .promo
+        min-height: 400px
+        padding: 160px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 28px
+            padding: 0 23px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            font-size: 16px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff)
+    .menu
+        width: 85%
+        &_active
+            padding-left: 12px
+            padding-right: 12px
+        &_item
+            margin: 5px
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+    .reasons
+        padding: 22px 0 36px 0
+        .container
+            min-width: 320px
+            max-width: 575px
+            margin: 0 auto
+            .reasons_wrapper
+                max-width: 320px
+                min-height: auto
+                margin: 0 auto
+                .card_wrapper
+                    margin-top: 26px
+                    min-height: auto
+                    .card_icon_wrapper
+                        width: 100px
+                        height: 100px
+                    .card_text
+                        max-width: 320px
+                        width: 100%
+                        margin-top: 16px
+                        margin-left: 0
+                        padding: 0 5px
+    
+    .title
+        font-size: 16px
+        margin-top: 15px
+        line-height: 16px
+
+    .mobile
+        .label
+            display: none
+        .subtitle
+            font-size: 14px
+    .mobile
+        &_item
+            width: 290px
+            height: 254px
+            opacity: 0.9
+            padding-top: 81px
+            font-size: 18px
+            &_6
+                .mobile_item_subtitle
+                    padding: 0 15px
+    .choice
+        .black_bg
+            min-height: fit-content
+            height: 390px
+            .title
+                display: none
+            .subtitle
+                display: none
+        .blue_bg
+            display: none
+        .car_in_eclipse
+            position: absolute
+            top: 84px
+            height: 190px
+            width: 300px
+        .bottom_text_display_575px
+            display: block
+            position: absolute
+            top: 297px
+            left: 50%
+            transform: translate(-50%)
+            margin: 0 auto
+            width: 260px
+            height: 70px
+            color: #ffffff
+            font-size: 17px
+            line-height: 24px
+            font-weight: 300
+            text-align: center
+    .require
+        padding: 25px 0 25px 0
+        &_title
+            font-size: 20px
+        &_list
+            padding-left: 30px
+            margin-top: 12px
+            li
+                font-size: 14px
+    .around_the_world
+        padding: 12px 0
+        background-color: #080816
+        .title
+            margin-top: 12px
+        .subtitle
+            margin-top: 10px
+        .cities_link
+            margin: 65px 0 0 0
+    .divider
+        width: 253px
+    footer
+        .bottom_container
+            .horizontal_wrapper
+                position: relative
+                .left_wrapper
+                    position: absolute
+                    top: 97px
+                    left: 50%
+                    transform: translate(-50%)
+                    width: 155px
+                    .social_network_wrapper
+                        .social_network_box
+                            width: 32px
+                            height: 32px
+                            a
+                                img
+                                    width: 100%
+                                    height: auto
+                .middle_wrapper
+                    width: 100%
+                    .regular_links_wrapper
+                        .first_row_links_wrapper
+                            .first_row_link
+                                font-size: 14px
+                                margin: 0 5px
+                        .second_row_links_wrapper
+                            max-width: 265px
+                            .second_row_link
+                                width: auto
+                                font-size: 11px
+                .right_wrapper
+                    width: 260px
+                    position: absolute
+                    top: 145px
+                    left: 50%
+                    transform: translate(-50%)
+                    .app_stores_wrapper
+                        .app_store_link
+                            img
+                                width: auto
+                                height: 24px
+        .link_russian
+            font-size: 11px
+            margin-top: 25px
+        .bottom_bar
+            margin-top: 110px
+            background-color: #ffff
+
             
+
+
+        
+
+
+
+
+            
+
+
+
 
 
 
